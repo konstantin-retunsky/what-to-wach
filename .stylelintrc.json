@@ -1,0 +1,17 @@
+{
+	"extends": [
+		"stylelint-config-standard",
+		"stylelint-order-config-standard"
+	],
+	"plugins": [
+		"stylelint-order",
+    "stylelint-scss"
+	],
+	"rules": {
+		"indentation": [
+			"tab"
+		],
+		"selector-max-class": 2,
+		"no-descending-specificity": null
+	}
+}
