@@ -1,10 +1,10 @@
 import React from "react";
 import './App.css';
+
 function App() {
 	return (
-		<div className="App">
-			sadf
-		</div>
+    <div className="App">
+    </div>
 	);
 }
-export default App
+export default App;
