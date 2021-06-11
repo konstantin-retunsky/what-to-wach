@@ -10,7 +10,7 @@ module.exports = (env, argv) => {
 			app: "./src/index.js"
 		},
 		output: {
-			filename: "bundle.js",
+			filename: "js/bundle.js",
 			path: path.resolve(__dirname, "build"),
 		},
 		module: {
@@ -37,14 +37,13 @@ module.exports = (env, argv) => {
 		resolve: {
 			extensions: [".js", ".jsx"],
 		},
-		devtool: "source-map",
 		plugins: [
 			new HtmlWebpackPlugin({
 				template: "./src/index.html",
 				inject: "body",
 			}),
 			new MiniCssExtractPlugin({
-				filename: "[name].css",
+				filename: "css/[name].css",
 			}),
 			new webpack.ProgressPlugin(),
 			new CleanWebpackPlugin(),
